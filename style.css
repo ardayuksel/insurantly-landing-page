@@ -85,6 +85,9 @@ header {
   font-weight: 800;
   font-size: 58px;
   line-height: 80px;
+  animation: linear finite alternate;
+  animation-name: scroll;
+  animation-duration: 0.5s;
 }
 .hero-inside-container p {
   margin-top: 20px;
@@ -92,6 +95,9 @@ header {
   font-size: 20px;
   line-height: 30px;
   width: 376px;
+  animation: linear finite alternate;
+  animation-name: scroll;
+  animation-duration: 1s;
 }
 .hero-container img {
   vertical-align: middle;
@@ -116,6 +122,17 @@ header {
   justify-content: center;
   align-items: center;
   min-width: 329px;
+  animation: linear finite alternate;
+  animation-name: scroll;
+  animation-duration: 1s;
+}
+@keyframes scroll {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0%);
+  }
 }
 .features-box img {
   margin-bottom: 30px;
