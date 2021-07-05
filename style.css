@@ -98,9 +98,35 @@ header {
   animation: linear finite alternate;
   animation-name: scroll;
   animation-duration: 1s;
+  margin-bottom: 35px;
 }
 .hero-container img {
   vertical-align: middle;
+}
+.hero-button-container {
+  display: flex;
+}
+.hero-button-container .btn-blue {
+  margin-right: 10px;
+}
+.btn {
+  padding: 15px 36px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  border-radius: 37px;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-blue {
+  background-color: #23a6f0;
+  border: none;
+}
+.btn-transparent {
+  border: 1px solid white;
 }
 /* Features Section */
 .features-section {
@@ -121,7 +147,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 329px;
+  width: 329px;
   animation: linear finite alternate;
   animation-name: scroll;
   animation-duration: 1s;
@@ -239,6 +265,22 @@ header {
     font-size: 20px;
     line-height: 30px;
     width: 279px;
+  }
+  .hero-button-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-button-container .btn-blue {
+    margin-bottom: 25px;
+    margin-right: 0px;
+  }
+  .btn {
+    padding: 10px 36px;
+  }
+  .btn-transparent {
+    border: 1px solid #23a6f0;
+    color: #23a6f0;
   }
   .features-section {
     padding: 80px 0px;
